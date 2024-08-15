@@ -26,6 +26,6 @@ Our fine-tuning process started with the following base model:
 
 ### Evaluation
 
-We evaluated our fine-tuned model using Llama-3.1-70B for scoring the responses. The results are visualized below:
+We evaluated our fine-tuned model using Llama-3.1-70B as Judge. The results are visualized below:
 
 ![PNG Image](results/comparison.png)
