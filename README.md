@@ -1,19 +1,31 @@
-# Gemma 2 Math Finetune
+# Gemma 2 Math Fine-tuning
 
-## Dataset:
+This repository contains the fine-tuning process and results for a math-focused version of the Gemma 2 model.
 
-MathInstruct:\
-https://huggingface.co/datasets/TIGER-Lab/MathInstruct
+## Dataset
 
-## Base Model:
+We used the MathInstruct dataset for fine-tuning:
 
-Gemma2 2b Instruct by Unsloth:\
-https://huggingface.co/unsloth/gemma-2b-it-bnb-4bit
+- **Dataset Name**: MathInstruct
+- **Source**: [TIGER-Lab/MathInstruct on Hugging Face](https://huggingface.co/datasets/TIGER-Lab/MathInstruct)
+- **Description**: MathInstruct is compiled from 13 math rationale datasets. It uniquely focuses on the hybrid use of chain-of-thought (CoT) and program-of-thought (PoT) rationales, and ensures extensive coverage of diverse mathematical fields.
 
-## Loss Curve:
+## Base Model
+
+Our fine-tuning process started with the following base model:
+
+- **Model**: Gemma 2b Instruct
+- **Version**: Unsloth's 4-bit quantized version
+- **Source**: [unsloth/gemma-2b-it-bnb-4bit on Hugging Face](https://huggingface.co/unsloth/gemma-2b-it-bnb-4bit)
+
+## Training Results
+
+### Loss Curve
 
 ![SVG Image](results/training_loss.svg)
 
-## Evaluation with Llama 70b:
+### Evaluation
+
+We evaluated our fine-tuned model using Llama-3.1-70B for scoring the responses. The results are visualized below:
 
 ![PNG Image](results/comparison.png)
