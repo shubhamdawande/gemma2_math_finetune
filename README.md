@@ -22,10 +22,10 @@ Our fine-tuning process started with the following base model:
 
 ### Loss Curve
 
-![SVG Image](results/training_loss.svg)
+<img src="results/training_loss.svg" alt="Training Loss" width="450" height="300">
 
 ### Evaluation
 
 We evaluated our fine-tuned model using Llama-3.1-70B as Judge. The results are visualized below:
 
-![PNG Image](results/comparison.png)
+<img src="results/comparison.png" alt="Training Loss" width="650" height="300">
