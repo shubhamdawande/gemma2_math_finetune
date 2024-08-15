@@ -1,4 +1,4 @@
-## Gemma 2 Math Finetune
+# Gemma 2 Math Finetune
 
 ## Dataset:
 
